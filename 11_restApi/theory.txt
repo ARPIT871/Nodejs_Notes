@@ -1,0 +1,25 @@
+RestApi-
+It is based on the client server architecture 
+and the standard which are set of rules and best practises
+for request and response of data
+
+
+A REST API is a method that allows different software applications to talk to each other over the internet. 
+It provides a set of rules and conventions for these applications to exchange data and perform actions. 
+Just like people use a common language to communicate, REST APIs use a common set of rules for software applications to understand and interact with each other.
+
+
+(req,res)=>{
+  req.header
+  res.send 
+}
+req==request->It is used to get parameters and headers
+
+res==response->It is used to send response data to the
+client 
+
+res.send(): This method is used to send a response of any type. It automatically sets the appropriate Content-Type header based on the provided data. 
+It can accept various types of data, including strings, objects, arrays, and even HTML or JSON. If you pass an object or an array, it will automatically convert it to JSON before sending the response.
+
+res.json(): This method specifically sends a JSON response to the client. It sets the Content-Type header to application/json and automatically converts the provided data to a JSON string before sending it.
+ It is commonly used when you want to explicitly send JSON data.

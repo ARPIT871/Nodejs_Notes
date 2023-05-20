@@ -1,0 +1,12 @@
+{
+  "name": "10-node_intro_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fsmodule.js",
+  "scripts": {
+    "start":"node fsmodule"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

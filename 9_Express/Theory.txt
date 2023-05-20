@@ -1,0 +1,11 @@
+
+so why we created express?
+-so we have seen that if have to create a server direactly
+with node it will take so much effort we have to manually
+created cases for routes using switch
+
+if we have to use information of the url so we hava to use
+external libraries like URL 
+
+with help help of express we can directly use methods on
+routes and perform actions

@@ -1,0 +1,13 @@
+RestApi - json
+
+Perform this task on given routes
+
+GET /users - list all user
+GET /api/users - list all user
+GET /api/user1/1 - GEt the user with ID 1
+GET /api/user2/2 - GEt the user with ID 2
+
+POST /user - create a new user
+
+PATCH /user/1 - update the user
+DELETE /user - delete the user
