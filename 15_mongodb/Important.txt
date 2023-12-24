@@ -1,0 +1,42 @@
+-SO WHY WE NEED MONGOdB?-------------------------------------------------------
+->It is a Database where you can store data which can username,emails,password etc.
+Because we need someone to manage our data and mongodb do this for us.IT provides 
+us functionalities like CRUD operation and scalability and more.
+
+-Connection---------------------------------------------------------------------
+we can connect mongodb to our node application directly but is old fashioned and so haptic and time consuming.
+That's why we use (MOngoose) a library which help us to connect
+our database easily with node application
+
+1st step- npm install MOngoose
+2nd step- const mongoose = requires("mongoose") Creating instance of mongoose
+
+-schemas and MOdels--------------------------------------------------------------------
+Now we cannot directly add data to the database we need to specify some format
+and we do that by making schemas, its like blueprints it defines which type of data
+this database will accept.
+And then We create Model of that schemas which help us to do operation
+with our data like insert,delete,edit and more.
+
+1st step- create schema using mongoose.schema it is a constructor function
+provided by Mongoose.
+
+const userSchema = new mongoose.schema({
+    name:{
+        type: String,
+        required: true
+    }
+    age:{
+        type:Number
+    }
+})
+
+2nd Step- Now we have to create Model for this schema using mongoose.model-function
+which is also provided by mongoose
+
+const User = mongoose.model('user',userSchema)
+in this function first argument of name of collection in which our data will be stored
+and second one is the name of schema for which we are creating this model
+
+3rd Step- Now we can use this model to create delete and edit the data
+we can save() and create

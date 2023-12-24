@@ -1,0 +1,81 @@
+--------installation------------
+
+Step 1: Choose the installation method:
+
+MongoDB offers different installation methods for different operating systems. Choose the method that is appropriate for your OS.
+Step 2: Download MongoDB:
+
+Visit the MongoDB Download Center at https://www.mongodb.com/try/download/community and select the version of MongoDB suitable for your operating system.
+Step 3: Extract the downloaded files:
+
+Once the download is complete, extract the contents of the downloaded file to a desired location on your computer.
+Step 4: Set up the data directory:
+
+MongoDB requires a data directory to store its database files. Create a directory to serve as the data directory, where MongoDB will store its data.
+Step 5: Configure the MongoDB server:
+
+MongoDB can be configured using a configuration file. You can customize various settings like the data directory, log files, network interfaces, etc., by modifying the configuration file.
+Step 6: Start MongoDB:
+
+Run the MongoDB server by executing the appropriate command for your operating system. This will start the MongoDB service.
+Step 7: Connect to MongoDB:
+
+To interact with MongoDB, you can use the MongoDB shell or connect to MongoDB using a MongoDB client.
+
+
+---------------Common Points------------------------
+
+1.MongoDB is a popular NoSQL database management system.
+
+2.It is designed to store and retrieve large volumes of unstructured data, making it well-suited for handling diverse data types and complex data structures.
+
+3.MongoDB uses a flexible document-oriented data model, where data is stored in JSON-like documents called BSON (Binary JSON).
+
+4.It is schema-less, meaning that the structure of the documents can vary within a collection.
+
+5.MongoDB provides high scalability and performance by distributing data across multiple servers and allowing horizontal scaling through sharding.
+
+6.It supports replication, ensuring data availability and fault tolerance by maintaining multiple copies of data across different servers.
+
+7.MongoDB has a rich query language and supports a wide range of queries, including ad hoc queries, indexing, and aggregation pipelines for complex data manipulations.
+
+8.It offers a flexible and powerful aggregation framework for performing advanced data analysis and transformations on large datasets.
+
+
+
+
+---some mostly Used command------------------
+
+use <database>: Switches to a specified database.
+
+db.collectionName.find(): Retrieves all documents from a collection.
+
+db.collectionName.findOne(): Retrieves a single document from a collection.
+
+db.collectionName.insertOne(document): Inserts a single document into a collection.
+
+db.collectionName.insertMany(documents): Inserts multiple documents into a collection.
+
+db.collectionName.updateOne(filter, update): Updates a single document in a collection based on the specified filter.
+
+db.collectionName.updateMany(filter, update): Updates multiple documents in a collection based on the specified filter.
+
+db.collectionName.deleteOne(filter): Deletes a single document from a collection based on the specified filter.
+
+db.collectionName.deleteMany(filter): Deletes multiple documents from a collection based on the specified filter.
+
+db.collectionName.aggregate(pipeline): Performs advanced data aggregation operations using a pipeline of stages.
+
+db.collectionName.createIndex(keys): Creates an index on the specified keys for faster query performance.
+
+db.collectionName.drop(): Drops the entire collection.
+
+db.collectionName.countDocuments(filter): Counts the number of documents in a collection based on the specified filter.
+
+db.collectionName.distinct(field, filter): Retrieves the distinct values of a field in a collection based on the specified filter.
+
+db.collectionName.find(filter, projection): Retrieves documents from a collection based on the specified filter and projection.
+
+
+
+

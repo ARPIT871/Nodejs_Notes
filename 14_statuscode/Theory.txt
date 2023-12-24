@@ -1,0 +1,20 @@
+Status codes are three-digit numbers that are used by computers to communicate the outcome of a request made to a server.
+They provide information about the status or condition of the requested resource or operation. Here's a simplified explanation of the different types of status codes:
+
+1.Informational Codes (1xx):
+These codes indicate that the request has been received and the server is continuing to process it. They are mostly used for informational purposes and not commonly encountered.
+
+2.Success Codes (2xx):
+These codes indicate that the request was successful and the server was able to fulfill it. The most well-known success code is 200, which means "OK" and indicates that the request was successful.
+
+3.Redirection Codes (3xx):
+These codes indicate that the client needs to take additional action to complete the request. They are often used when a resource has been moved or temporarily relocated. For example, code 301 means "Moved Permanently" and indicates that the requested resource has been permanently moved to a new location.
+
+4.Client Error Codes (4xx):
+These codes indicate that there was an error with the client's request, such as an invalid URL or insufficient permissions. The most common client error code is 404, which means "Not Found" and indicates that the requested resource could not be found on the server.
+
+5.Server Error Codes (5xx):
+These codes indicate that there was an error on the server side while processing the request. It means that the server encountered a problem and couldn't fulfill the request. The most familiar server error code is 500, which means "Internal Server Error" and indicates a generic server-side problem.
+
+Status codes help computers and web browsers understand the outcome of a request and handle it appropriately. 
+They are an essential part of the communication between clients (such as web browsers) and servers on the internet.

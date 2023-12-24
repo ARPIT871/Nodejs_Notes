@@ -23,3 +23,26 @@ It can accept various types of data, including strings, objects, arrays, and eve
 
 res.json(): This method specifically sends a JSON response to the client. It sets the Content-Type header to application/json and automatically converts the provided data to a JSON string before sending it.
  It is commonly used when you want to explicitly send JSON data.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+working with Forms-
+
+When you submit a normal HTML form from the frontend, the default content type used is application/x-www-form-urlencoded. This content type specifies that the form data should be URL-encoded before being sent to the server.
+
+URL encoding the form data ensures that special characters, spaces, and non-ASCII characters are properly represented and can be transmitted over the Internet. Each form field name and value is encoded using the URL encoding rules.
+
+
+
+URL encoding is a mechanism for converting special characters and non-ASCII characters into a format that can be transmitted over the Internet. URLs (Uniform Resource Locators) are used to identify and locate resources on the web, such as web pages, images, or files. However, URLs have certain restrictions on the characters they can contain.
+
+URL encoding ensures that special characters, such as spaces, symbols, and non-ASCII characters, are properly represented in a URL.
+
+
+so if you have to use the data of form than you have o use a parseer in express which is Url encoder
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+IF your sending different file types like json then you have to parse it also 

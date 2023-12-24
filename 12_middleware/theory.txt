@@ -1,0 +1,36 @@
+-Middleware is a function which sits between the client and server 
+and if server has middleware the first we have to satisfy the 
+middleware then iw will give you the access of the application
+
+Definition---------
+
+In Express, middleware refers to functions or code that sits between the initial request and the final response in the request-response cycle. It provides a way to handle common tasks and perform operations on the request and response objects.
+
+Middleware functions in Express have access to the request (req) and response (res) objects, as well as the next function, which is used to pass control to the next middleware function in the chain. Middleware functions can perform various tasks, such as logging, authentication, data parsing, error handling, and more.
+
+
+Here are some key points about middleware in Express:
+
+1.Order of Middleware: Middleware functions are executed in the order they are defined. They are typically defined using the app.use() or app.METHOD() functions, where METHOD can be any valid HTTP method (get, post, put, delete, etc.). Middleware defined using app.use() is executed for all routes, while middleware defined using app.METHOD() is specific to that method.
+
+2.Request-level Middleware: Middleware can be defined globally for all routes or specific to certain routes. When middleware is defined for a specific route, it only applies to that route and any subsequent middleware defined after it.
+
+3.Middleware Functions: Middleware functions have access to the req (request) and res (response) objects. They can modify these objects, perform additional processing, or terminate the request-response cycle by sending a response.
+
+4.Next Function: Middleware functions must call the next function to pass control to the next middleware in the chain. If next is not called, the request will be left hanging, and the response won't be sent.
+
+5.Error Handling Middleware: Error handling middleware is used to handle errors that occur during the request-response cycle. It is defined with four parameters (err, req, res, next), and Express recognizes it as an error handling middleware because it has one more parameter than regular middleware functions.
+
+
+
+------------------------------------------------------------------------------------------------
+Here's an example of a simple middleware function in Express that logs the request URL:
+
+app.use(function(req, res, next) {
+  console.log('Requested URL:', req.url);
+  next();
+});
+
+In this example, the middleware function logs the requested URL and then calls next() to pass control to the next middleware in the chain.
+
+Middleware functions in Express provide a flexible way to handle common tasks and add functionality to your application's request-response cycle. They allow for code reuse, modularization, and customization of the request processing flow

@@ -1,0 +1,39 @@
+Headers are like additional pieces of information that are sent along with a request or response when your web browser communicates with a server.
+
+Think of headers as labels that provide important details. When you visit a website, your browser sends a request to the server, and this request includes headers that tell the server things like the type of content your browser can handle, any authentication information, or even details about the software your browser is using.
+
+Similarly, when the server sends a response back to your browser, it includes headers too. These headers can tell your browser how to interpret the content, whether it should cache the response for faster access later, or even where to redirect to if necessary.
+
+Headers are like little messages exchanged between your browser and the server to ensure smooth communication and enable additional functionality.
+
+Some common examples of headers include the content type (to indicate if it's HTML, JSON, etc.), authorization (for logging in or accessing protected areas), and user-agent (to let the server know what browser or device you're using).
+
+Headers play an important role in enabling features and providing necessary information during web browsing and server communication.
+
+
+----------------------------------------------------------------
+
+
+Headers are key-value pairs, where the key represents the name of the header, and the value represents its corresponding information. The headers are included in the request sent by the client to the server or in the response returned by the server to the client.
+
+Here are some commonly used headers:
+
+1.Content-Type: Specifies the MIME type of the content in the request or response body. For example, Content-Type: application/json indicates that the content is in JSON format.
+
+2.Authorization: Contains authentication credentials for accessing protected resources. It can include tokens, API keys, or other authentication information.
+
+3.User-Agent: Identifies the software or client making the request. It helps servers tailor the response based on the capabilities or preferences of the client.
+
+4.Accept: Specifies the acceptable content types the client can handle. It informs the server about the preferred format for the response.
+
+5.Cache-Control: Controls caching behavior by specifying directives for caching mechanisms. It helps optimize network performance by caching resources.
+
+6.Location: In a response, it indicates the URL where the requested resource is located or where a redirection should occur.
+
+7.Set-Cookie: Sends a cookie from the server to the client. Cookies are used for session management, user tracking, and other purposes.
+
+These are just a few examples, and there are numerous other headers used for various purposes.
+
+
+If you are creating your custom header then it is good practises
+to use X in beginning of your header
