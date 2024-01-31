@@ -12,5 +12,8 @@ Covers fundamental concepts and advanced topics.
 Source code examples that can be easily referenced and utilized in your own projects.
 Dive into the world of backend web development and enhance your skills with this valuable resource.
 
+Install node modules in all projects
+```npm install```
+
 Note: The notes and source code in this repository are not handwritten but have been carefully curated to provide the most accurate and practical information for 
 learning and implementing Node.js, Express.js, and MongoDB.
